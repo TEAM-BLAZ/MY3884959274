@@ -55,3 +55,28 @@ async def start_BLaZe():
     global blh
     global bli
     global blj
+
+    if blazea:
+        session_name = str(blazea)
+        print("String 1 Found")
+        bla = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 1")
+            await bla.start()
+            botme = await bla.get_me()
+            await bla(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
+            await bla(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            botid = telethon.utils.get_peer_id(botme)
+            BLAZEA_USERS.append(botid)
+        except Exception as e:
+            bla = "BLAZEA"
+            print(e)
+            pass
+    else:
+        print("Session 1 not Found")
+        session_name = "startup"
+        bla = TelegramClient(session_name, a, b)
+        try:
+            await bla.start()
+        except Exception as e:
+            pass
