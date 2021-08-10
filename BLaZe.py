@@ -139,7 +139,7 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
              
-          @bla.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 
 async def _(e):
@@ -178,7 +178,7 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
             
-   @bla.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 
 async def spam(e):
@@ -211,7 +211,7 @@ async def spam(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
             
-   @bla.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 
 async def spam(e):
@@ -252,7 +252,7 @@ async def spam(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-   @bla.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 
 async def spam(e):
@@ -289,7 +289,7 @@ async def spam(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-   @bla.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 
 async def spam(e):
@@ -346,7 +346,7 @@ async def _(event):
             reply_to=event.message.id,
         )           
             
-   @bla.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 
 async def _(e):
@@ -380,7 +380,7 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-   @bla.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 
 async def _(e):
@@ -416,7 +416,7 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
     
-          @bla.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
           
 async def ping(e):
@@ -428,7 +428,9 @@ async def ping(e):
         ms = (end-start).microseconds / 1000
         await event.edit(f"🔰【★𓆩βƖꪖƹꫀ★】✘ sρꪖꪑꪑε𝚁 \n\n╰•★★  ℘ơŋɠ ★★•╯\n╔═╗╔═╗╔═╦╗╔══╗\n║╬║║║║║║║║║╔═╣\n║╔╝║║║║║║║║╚╗║\n╚╝─╚═╝╚╩═╝╚══╝\n`{ms}` 𝗺𝘀")
 
-          @bla.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+  
+
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 
 async def restart(e):
@@ -449,7 +451,7 @@ async def restart(e):
         quit()
 
         
-                  @bla.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 
 async def help(e):
