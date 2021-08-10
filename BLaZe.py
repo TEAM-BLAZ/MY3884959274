@@ -107,7 +107,7 @@ async def start_BLaZe():
         except Exception as e:
             pass
 
-if blazec:
+    if blazec:
         session_name = str(blazec)
         print("String 3 Found")
         blc = TelegramClient(StringSession(session_name), api, hash)
@@ -132,7 +132,7 @@ if blazec:
         except Exception as e:
             pass
 
-if blazed:
+    if blazed:
         session_name = str(blazed)
         print("String 4 Found")
         bld = TelegramClient(StringSession(session_name), api, hash)
@@ -158,7 +158,7 @@ if blazed:
             pass
 
 
-if blazee:
+    if blazee:
         session_name = str(blazee)
         print("String 5 Found")
         ble = TelegramClient(StringSession(session_name), api, hash)
@@ -183,7 +183,7 @@ if blazee:
         except Exception as e:
             pass
 
-if blazef:
+    if blazef:
         session_name = str(blazef)
         print("String 6 Found")
         blf = TelegramClient(StringSession(session_name), api, hash)
@@ -208,7 +208,7 @@ if blazef:
         except Exception as e:
             pass
 
-if blazeg:
+    if blazeg:
         session_name = str(blazeg)
         print("String 7 Found")
         blg = TelegramClient(StringSession(session_name), api, hash)
@@ -233,7 +233,7 @@ if blazeg:
         except Exception as e:
             pass
 
-if blazeh:
+    if blazeh:
         session_name = str(blazeh)
         print("String 8 Found")
         blh = TelegramClient(StringSession(session_name), api, hash)
@@ -258,7 +258,7 @@ if blazeh:
         except Exception as e:
             pass
 
-if blazei:
+    if blazei:
         session_name = str(blazei)
         print("String 9 Found")
         bli = TelegramClient(StringSession(session_name), api, hash)
@@ -283,7 +283,7 @@ if blazei:
         except Exception as e:
             pass
 
-if blazej:
+    if blazej:
         session_name = str(blazej)
         print("String 10 Found")
         blj = TelegramClient(StringSession(session_name), api, hash)
