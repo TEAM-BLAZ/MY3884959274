@@ -37,3 +37,11 @@ blg = ""
 blh = ""
 bli = ""
 blj = ""
+
+que = {}
+
+BLAZEA_USERS = []
+for x in SUDO: 
+    BLAZEA_USERS.append(x)
+    
+async def start_BLaZe():
