@@ -45,3 +45,13 @@ for x in SUDO:
     BLAZEA_USERS.append(x)
     
 async def start_BLaZe():
+    global bla
+    global blb
+    global blc
+    global bld
+    global ble
+    global blf
+    global blg
+    global blh
+    global bli
+    global blj
