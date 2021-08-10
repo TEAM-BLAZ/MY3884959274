@@ -59,7 +59,7 @@ async def start_BLaZe():
     if blazea:
         session_name = str(blazea)
         print("String 1 Found")
-        bla = TelegramClient(StringSession(session_name), a, b)
+        bla = TelegramClient(StringSession(session_name), api, hash)
         try:
             print("Booting Up The Client 1")
             await bla.start()
@@ -75,7 +75,7 @@ async def start_BLaZe():
     else:
         print("Session 1 not Found")
         session_name = "startup"
-        bla = TelegramClient(session_name, a, b)
+        bla = TelegramClient(session_name, api, hash)
         try:
             await bla.start()
         except Exception as e:
