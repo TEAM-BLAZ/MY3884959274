@@ -26,3 +26,14 @@ blazeg = STRING7
 blazeh = STRING8
 blazei = STRING9
 blazej = STRING10
+
+bla = ""
+blb = ""
+blc = ""
+bld = ""
+ble = ""
+blf = ""
+blg = ""
+blh = ""
+bli = ""
+blj = ""
