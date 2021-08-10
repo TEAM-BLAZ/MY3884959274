@@ -337,11 +337,9 @@ async def gifspam(e, blazea):
 @blh.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @bli.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @blj.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-
-
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio 🔰✘𓆩βƖꪖƹꫀ★】 sρꪖꪑꪑε𝚁 ʀꪮʙʙꪮᴛ "
-    if e.sender_id in BLAZEA_USERS:
+    if e.sender_id in BLAZE_USERS:
         bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
         if len(e.text) > 5:
             bio = str(bLaZe[0])
