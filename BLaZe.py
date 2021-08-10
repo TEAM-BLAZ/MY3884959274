@@ -437,7 +437,7 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
             
-   @bla.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
@@ -466,7 +466,7 @@ async def spam(e):
             counter = int(alex[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None )
-            for _ in range(counter):
+            for _ in range(counter): 
                 blazea = await e.client.send_file(e.chat_id, smex, caption=smex.text)
                 await gifspam(e, blazea)  
         elif e.reply_to_msg_id and blazea.text:
@@ -478,7 +478,7 @@ async def spam(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
             
-   @bla.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
@@ -527,7 +527,7 @@ async def spam(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-   @bla.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
@@ -572,7 +572,7 @@ async def spam(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-   @bla.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
@@ -645,7 +645,7 @@ async def _(event):
             reply_to=event.message.id,
         )           
             
-   @bla.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
@@ -687,7 +687,7 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-   @bla.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
@@ -731,9 +731,9 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
     
-          @bla.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
- @blc.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @ble.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @blf.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
@@ -751,8 +751,17 @@ async def ping(e):
         ms = (end-start).microseconds / 1000
         await event.edit(f"🔰【★𓆩βƖꪖƹꫀ★】✘ sρꪖꪑꪑε𝚁 \n\n╰•★★  ℘ơŋɠ ★★•╯\n╔═╗╔═╗╔═╦╗╔══╗\n║╬║║║║║║║║║╔═╣\n║╔╝║║║║║║║║╚╗║\n╚╝─╚═╝╚╩═╝╚══╝\n`{ms}` 𝗺𝘀")
 
-          @bla.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@blf.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@blg.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@blh.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@bli.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@blj.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+
 
 async def restart(e):
     if e.sender_id in BLAZEA_USERS:
@@ -772,7 +781,7 @@ async def restart(e):
         quit()
 
         
-                  @bla.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.help"))
