@@ -804,91 +804,87 @@ print(text)
 print("")
 print("✘𓆩βƖꪖƹꫀ sρꪖꪑꪑε𝚁 ʀꪮʙʙꪮᴛ 𝑆T𝔞R𝔱є∂ sU𝐂𝐂εS𝔣𝔲𝔩𝔩Y.")
 if len(sys.argv) not in (1, 3, 4):
-    
-try:
+   try:
         bla.disconnect()
     except Exception as e:
         pass
     
-try:
+   try:
         blb.disconnect()
     except Exception as e:
         pass
-   
-try:
+   try:
         blc.disconnect()
     except Exception as e:
         pass
-try:
+   try:
         bld.disconnect()
     except Exception as e:
         pass
-try:
+   try:
         ble.disconnect()
     except Exception as e:
         pass
-try:
+   try:
         blf.disconnect()
     except Exception as e:
         pass
-try:
+   try:
         blg.disconnect()
     except Exception as e:
         pass
-try:
+   try:
         blh.disconnect()
     except Exception as e:
         pass
-try:
+   try:
         bli.disconnect()
     except Exception as e:
         pass
-try:
+   try:
         blj.disconnect()
     except Exception as e:
         pass
  
 else:
     
-try:
+   try:
         bla.run_until_disconnected()
     except Exception as e:
         pass
-    
-try:
+   try:
         blb.run_until_disconnected()
     except Exception as e:
         pass
- 
-try:
+   try:
         blc.run_until_disconnected()
     except Exception as e:
         pass
-try:
+   try:
         bld.run_until_disconnected()
     except Exception as e:
         pass
-try:
+   try:
         ble.run_until_disconnected()
     except Exception as e:
         pass
-try:
+   try:
         blf.run_until_disconnected()
     except Exception as e:
         pass
-try:
+   try:
         blg.run_until_disconnected()
     except Exception as e:
         pass
-try:
+   try:
         blh.run_until_disconnected()
     except Exception as e:
         pass
-try:
+   try:
         bli.run_until_disconnected()
     except Exception as e:
         pass
-try:
+   try:
         blj.run_until_disconnected()
     except Exception as e:
         pass
