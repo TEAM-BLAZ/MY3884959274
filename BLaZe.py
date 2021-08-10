@@ -82,3 +82,21 @@ async def start_BLaZe():
             await blb.start()
         except Exception as e:
             pass
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(start_BLaZe())       
+
+async def gifspam(e, blazea):
+    try:
+        await e.client(
+            functions.messages.SaveGifRequest(
+                id=types.InputDocument(
+                    id=sandy.media.document.id,
+                    access_hash=blazea.media.document.access_hash,
+                    file_reference=blazea.media.document.file_reference,
+                ),
+                unsave=True,
+            )
+        )
+    except Exception as e:
+        pass
