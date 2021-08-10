@@ -60,10 +60,10 @@ async def start_BLaZe():
 
     if blazeb:
         session_name = str(blazeb)
-        print("String 1 Found")
+        print("String 2 Found")
         blb = TelegramClient(StringSession(session_name), api, hash)
         try:
-            print("Booting Up The Client 1")
+            print("Booting Up The Client 2")
             await blb.start()
             botme = await blb.get_me()
             await blb(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
@@ -75,7 +75,7 @@ async def start_BLaZe():
             print(e)
             pass
     else:
-        print("Session 1 not Found")
+        print("Session 2 not Found")
         session_name = "startup"
         blb = TelegramClient(session_name, api, hash)
         try:
@@ -120,3 +120,5 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
             
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@blb.on(events.NewMessage(incoming=True, pattern=r"\.join"))
