@@ -100,3 +100,23 @@ async def gifspam(e, blazea):
         )
     except Exception as e:
         pass
+
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+@blb.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+
+async def _(e):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio 🔰✘𓆩βƖꪖƹꫀ★】 sρꪖꪑꪑε𝚁 ʀꪮʙʙꪮᴛ "
+    if e.sender_id in BLAZEA_USERS:
+        bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
+        if len(e.text) > 5:
+            bio = str(bLaZe[0])
+            text = "Changing Bio"
+            event = await e.reply(text, parse_mode=None, link_preview=None )
+            try:
+                await e.client(functions.account.UpdateProfileRequest(about=bio))
+                await event.edit("Succesfully Changed Bio By... BLaZe SpAmmEr RoBoT")
+            except Exception as e:
+                await event.edit(str(e))   
+        else:
+            await e.reply(usage, parse_mode=None, link_preview=None )
+            
