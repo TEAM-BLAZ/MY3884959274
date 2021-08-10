@@ -327,32 +327,6 @@ async def gifspam(e, blazea):
         pass
 
 
-@bla.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@blb.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-
-async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
-    if e.sender_id in BLAZEA_USERS:
-        bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
-        if len(e.text) > 5:
-            bio = str(bLaZe[0])
-            text = "Changing Bio"
-            event = await e.reply(text, parse_mode=None, link_preview=None )
-            try:
-                await e.client(functions.account.UpdateProfileRequest(about=bio))
-                await event.edit("Succesfully Changed Bio...... bLaZe Spam Bot")
-            except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
             
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.join"))
