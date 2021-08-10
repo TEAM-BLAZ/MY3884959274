@@ -19,7 +19,7 @@ __________________________________
  ᴅᴇᴘʟᴏʏ ᴛᴏ..... 25 ʙᴏᴛs ɪɴ ᴛɪᴍᴇ ✰
 __________________________________
 ## 🚀 𝐃ερℓσү ση нεяσкυ 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://github.com/TEAM-BLAZ/MY3884959274)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TEAM-BLAZ/MY3884959274)
 
 __________________________________
 # [sтяιηg sεssιση](https://replit.com/@TCeReaLkiller/BLAZE-SPAMMER)
