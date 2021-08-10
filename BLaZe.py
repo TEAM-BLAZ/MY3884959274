@@ -337,8 +337,9 @@ async def gifspam(e, blazea):
 @blh.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @bli.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @blj.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio  <Message to set Bio of Userbot accounts "
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
     if e.sender_id in BLAZEA_USERS:
         bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
         if len(e.text) > 5:
@@ -347,12 +348,13 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.account.UpdateProfileRequest(about=bio))
-                await event.edit("Succesfully Changed Bio By... BLaZe SpAmmEr RoBoT")
+                await event.edit("Succesfully Changed Bio...... bLaZe Spam Bot")
             except Exception as e:
                 await event.edit(str(e))   
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
             
+
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.join"))
@@ -773,7 +775,39 @@ async def restart(e):
             await blb.disconnect()
         except Exception as e:
             pass
-        
+        try:
+            await blc.disconnect()
+        except Exception as e:
+            pass
+        try:
+            await bld.disconnect()
+        except Exception as e:
+            pass
+        try:
+            await ble.disconnect()
+        except Exception as e:
+            pass
+        try:
+            await blf.disconnect()
+        except Exception as e:
+            pass
+        try:
+            await blg.disconnect()
+        except Exception as e:
+            pass
+        try:
+            await blh.disconnect()
+        except Exception as e:
+            pass
+        try:
+            await bli.disconnect()
+        except Exception as e:
+            pass
+        try:
+            await blj.disconnect()
+        except Exception as e:
+            pass
+
             
         os.execl(sys.executable, sys.executable, *sys.argv)
         quit()
