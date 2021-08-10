@@ -804,15 +804,18 @@ print(text)
 print("")
 print("✘𓆩βƖꪖƹꫀ sρꪖꪑꪑε𝚁 ʀꪮʙʙꪮᴛ 𝑆T𝔞R𝔱є∂ sU𝐂𝐂εS𝔣𝔲𝔩𝔩Y.")
 if len(sys.argv) not in (1, 3, 4):
-    try:
+    
+try:
         bla.disconnect()
     except Exception as e:
         pass
-    try:
+    
+try:
         blb.disconnect()
     except Exception as e:
         pass
-   try:
+   
+try:
         blc.disconnect()
     except Exception as e:
         pass
@@ -846,15 +849,18 @@ try:
         pass
  
 else:
-    try:
+    
+try:
         bla.run_until_disconnected()
     except Exception as e:
         pass
-    try:
+    
+try:
         blb.run_until_disconnected()
     except Exception as e:
         pass
- try:
+ 
+try:
         blc.run_until_disconnected()
     except Exception as e:
         pass
