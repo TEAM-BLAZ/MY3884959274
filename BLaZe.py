@@ -381,8 +381,8 @@ async def _(e):
                 await event.edit(str(e))   
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
-             
-          @bla.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+           
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
