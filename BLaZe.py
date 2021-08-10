@@ -275,11 +275,11 @@ async def start_BLaZe():
             print(e)
             pass
     else:
-        print("Session 10 not Found")
+        print("Session 9 not Found")
         session_name = "startup"
-        blj = TelegramClient(session_name, api, hash)
+        bli = TelegramClient(session_name, api, hash)
         try:
-            await blj.start()
+            await bli.start()
         except Exception as e:
             pass
 
