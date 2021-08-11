@@ -530,6 +530,9 @@ async def _(e):
     
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 
 async def ping(e):
     if e.sender_id in BLAZEA_USERS:
@@ -542,6 +545,9 @@ async def ping(e):
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 
 
 async def restart(e):
@@ -556,6 +562,18 @@ async def restart(e):
             await blb.disconnect()
         except Exception as e:
             pass
+        try:
+            await blc.disconnect()
+        except Exception as e:
+            pass
+        try:
+            await bld.disconnect()
+        except Exception as e:
+            pass
+        try:
+            await ble.disconnect()
+        except Exception as e:
+            pass
 
             
         os.execl(sys.executable, sys.executable, *sys.argv)
@@ -564,15 +582,16 @@ async def restart(e):
         
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 
 async def help(e):
     if e.sender_id in BLAZEA_USERS:
        text = "𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀\n\n𝙐𝙩𝙞𝙡𝙨 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.ping\n.restart\n\n𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.bio\n.join\n.pjoin\n.leave\n\n𝙎𝙥𝙖𝙢 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
        await e.reply(text, parse_mode=None, link_preview=None )
 
-text = """
-
-🔰✘𓆩βƖꪖƹꫀ sρꪖꪑꪑε𝚁 ʀꪮʙʙꪮᴛ Ꭵs 𝙈𝙊𝘿𝙄𝙁𝙄𝙀𝘿...🔰"""
+text = """🔰✘𓆩βƖꪖƹꫀ sρꪖꪑꪑε𝚁 ʀꪮʙʙꪮᴛ Ꭵs 𝙈𝙊𝘿𝙄𝙁𝙄𝙀𝘿...🔰"""
 print(text)
 print("")
 print("✘𓆩βƖꪖƹꫀ sρꪖꪑꪑε𝚁 ʀꪮʙʙꪮᴛ 𝑆T𝔞R𝔱є∂ sU𝐂𝐂εS𝔣𝔲𝔩𝔩Y.")
@@ -580,10 +599,21 @@ if len(sys.argv) not in (1, 3, 4):
     try:
         bla.disconnect()
     except Exception as e:
-        pass
-    
+        pass    
     try:
         blb.disconnect()
+    except Exception as e:
+        pass
+    try:
+        blc.disconnect()
+    except Exception as e:
+        pass
+    try:
+        bld.disconnect()
+    except Exception as e:
+        pass
+    try:
+        ble.disconnect()
     except Exception as e:
         pass
 
@@ -595,5 +625,17 @@ else:
         pass
     try:
         blb.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        blc.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        bld.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        ble.run_until_disconnected()
     except Exception as e:
         pass
