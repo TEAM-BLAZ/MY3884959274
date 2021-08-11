@@ -250,7 +250,9 @@ async def _(e):
             
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in BLAZEA_USlERS:
@@ -270,7 +272,9 @@ async def _(e):
             
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
     error = "Spam Module can only be used till 100 count. For bigger spams use BigSpam."
@@ -303,6 +307,9 @@ async def spam(e):
             
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."
