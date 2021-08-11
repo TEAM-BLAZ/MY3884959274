@@ -281,7 +281,7 @@ async def spam(e):
     if e.sender_id in BLAZEA_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        bLaZe = ("".spam(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         blazea = await e.get_reply_message()
         if len(bLaZe) == 2:
             message = str(bLaZe[1])
@@ -317,7 +317,7 @@ async def spam(e):
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         blazea = await e.get_reply_message()
-        bLaZe = "".delayspam(e.text.split(maxsplit=1)[1:]).split(" ", 2)
+        bLaZe = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
         bLaZesexy = bLaZe[1:]
         if len(bLaZesexy) == 2:
             message = str(bLaZesexy[1])
@@ -360,7 +360,7 @@ async def spam(e):
     if e.sender_id in BLAZEA_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        bLaZe = ("".bigspam(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         blazea = await e.get_reply_message()
         if len(bLaZe) == 2:
             message = str(bLaZe[1])
@@ -400,7 +400,7 @@ async def spam(e):
     if e.sender_id in BLAZEA_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        bLaZe = ("".raid(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         blazea = await e.get_reply_message()
         if len(bLaZe) == 2:
             message = str(bLaZe[1])
@@ -464,7 +464,7 @@ async def _(e):
     if e.sender_id in BLAZEA_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        bLaZe = ("".replyraid(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         blazea = await e.get_reply_message()
         if len(e.text) > 11:
             message = str(bLaZe[0])
@@ -501,7 +501,7 @@ async def _(e):
     if e.sender_id in BLAZEA_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        bLaZe = ("".dreplyraid(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         blazea = await e.get_reply_message()
         if len(e.text) > 12:
             message = str(bLaZe[0])
