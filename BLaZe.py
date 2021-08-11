@@ -325,10 +325,6 @@ async def gifspam(e, blazea):
         )
     except Exception as e:
         pass
-
-
-            
-
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.join"))
