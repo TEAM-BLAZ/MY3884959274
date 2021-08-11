@@ -6,7 +6,7 @@ from os import execl
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.functions.account import UpdateProfileRequest
-from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4, STRING5, STRING6, STRING7, STRING8, STRING9, STRING10  
+from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2
 import asyncio
 import telethon.utils
 from telethon.tl import functions
@@ -18,25 +18,9 @@ api = API_ID
 hash = API_HASH
 blazea = STRING
 blazeb = STRING2
-blazec = STRING3
-blazed = STRING4
-blazee = STRING5
-blazef = STRING6
-blazeg = STRING7
-blazeh = STRING8
-blazei = STRING9
-blazej = STRING10
 
 bla = ""
 blb = ""
-blc = ""
-bld = ""
-ble = ""
-blf = ""
-blg = ""
-blh = ""
-bli = ""
-blj = ""
 
 que = {}
 
@@ -47,14 +31,6 @@ for x in SUDO:
 async def start_BLaZe():
     global bla
     global blb
-    global blc
-    global bld
-    global ble
-    global blf
-    global blg
-    global blh
-    global bli
-    global blj
 
 
     if blazea:
@@ -107,207 +83,6 @@ async def start_BLaZe():
         except Exception as e:
             pass
 
-    if blazec:
-        session_name = str(blazec)
-        print("String 3 Found")
-        blc = TelegramClient(StringSession(session_name), api, hash)
-        try:
-            print("Booting Up The Client 3")
-            await blc.start()
-            botme = await blc.get_me()
-            await blc(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await blc(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
-            botid = telethon.utils.get_peer_id(botme)
-            BLAZEA_USERS.append(botid)
-        except Exception as e:
-          
-            print(e)
-            pass
-    else:
-        print("Session 3 not Found")
-        session_name = "startup"
-        blc = TelegramClient(session_name, api, hash)
-        try:
-            await blc.start()
-        except Exception as e:
-            pass
-
-    if blazed:
-        session_name = str(blazed)
-        print("String 4 Found")
-        bld = TelegramClient(StringSession(session_name), api, hash)
-        try:
-            print("Booting Up The Client 4")
-            await bld.start()
-            botme = await bld.get_me()
-            await bld(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await bld(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
-            botid = telethon.utils.get_peer_id(botme)
-            BLAZEA_USERS.append(botid)
-        except Exception as e:
-          
-            print(e)
-            pass
-    else:
-        print("Session 4 not Found")
-        session_name = "startup"
-        bld = TelegramClient(session_name, api, hash)
-        try:
-            await bld.start()
-        except Exception as e:
-            pass
-
-
-    if blazee:
-        session_name = str(blazee)
-        print("String 5 Found")
-        ble = TelegramClient(StringSession(session_name), api, hash)
-        try:
-            print("Booting Up The Client 5")
-            await ble.start()
-            botme = await ble.get_me()
-            await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
-            botid = telethon.utils.get_peer_id(botme)
-            BLAZEA_USERS.append(botid)
-        except Exception as e:
-          
-            print(e)
-            pass
-    else:
-        print("Session 5 not Found")
-        session_name = "startup"
-        ble = TelegramClient(session_name, api, hash)
-        try:
-            await ble.start()
-        except Exception as e:
-            pass
-
-    if blazef:
-        session_name = str(blazef)
-        print("String 6 Found")
-        blf = TelegramClient(StringSession(session_name), api, hash)
-        try:
-            print("Booting Up The Client 6")
-            await blf.start()
-            botme = await blf.get_me()
-            await blf(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await blf(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
-            botid = telethon.utils.get_peer_id(botme)
-            BLAZEA_USERS.append(botid)
-        except Exception as e:
-          
-            print(e)
-            pass
-    else:
-        print("Session 6 not Found")
-        session_name = "startup"
-        blf = TelegramClient(session_name, api, hash)
-        try:
-            await blf.start()
-        except Exception as e:
-            pass
-
-    if blazeg:
-        session_name = str(blazeg)
-        print("String 7 Found")
-        blg = TelegramClient(StringSession(session_name), api, hash)
-        try:
-            print("Booting Up The Client 7")
-            await blg.start()
-            botme = await blg.get_me()
-            await blg(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await blg(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
-            botid = telethon.utils.get_peer_id(botme)
-            BLAZEA_USERS.append(botid) 
-        except Exception as e:
-          
-            print(e)
-            pass
-    else:
-        print("Session 7 not Found")
-        session_name = "startup"
-        blg = TelegramClient(session_name, api, hash)
-        try:
-            await blg.start()
-        except Exception as e:
-            pass
-
-    if blazeh:
-        session_name = str(blazeh)
-        print("String 8 Found")
-        blh = TelegramClient(StringSession(session_name), api, hash)
-        try:
-            print("Booting Up The Client 8")
-            await blh.start()
-            botme = await blh.get_me()
-            await blh(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await blh(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
-            botid = telethon.utils.get_peer_id(botme)
-            BLAZEA_USERS.append(botid)
-        except Exception as e:
-          
-            print(e)
-            pass
-    else:
-        print("Session 8 not Found")
-        session_name = "startup"
-        blh = TelegramClient(session_name, api, hash)
-        try:
-            await blh.start()
-        except Exception as e:
-            pass
-
-    if blazei:
-        session_name = str(blazei)
-        print("String 9 Found")
-        bli = TelegramClient(StringSession(session_name), api, hash)
-        try:
-            print("Booting Up The Client 9")
-            await bli.start()
-            botme = await bli.get_me()
-            await bli(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await bli(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
-            botid = telethon.utils.get_peer_id(botme)
-            BLAZEA_USERS.append(botid)
-        except Exception as e:
-          
-            print(e)
-            pass
-    else:
-        print("Session 9 not Found")
-        session_name = "startup"
-        bli = TelegramClient(session_name, api, hash)
-        try:
-            await bli.start()
-        except Exception as e:
-            pass
-
-    if blazej:
-        session_name = str(blazej)
-        print("String 10 Found")
-        blj = TelegramClient(StringSession(session_name), api, hash)
-        try:
-            print("Booting Up The Client 10")
-            await blj.start()
-            botme = await blj.get_me()
-            await blj(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await blj(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
-            botid = telethon.utils.get_peer_id(botme)
-            BLAZEA_USERS.append(botid)
-        except Exception as e:
-          
-            print(e)
-            pass
-    else:
-        print("Session 10 not Found")
-        session_name = "startup"
-        blj = TelegramClient(session_name, api, hash)
-        try:
-            await blj.start()
-        except Exception as e:
-            pass
-
 loop = asyncio.get_event_loop()
 loop.run_until_complete(start_BLaZe())       
 
@@ -328,14 +103,6 @@ async def gifspam(e, blazea):
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 async def bio(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
     if e.sender_id in BLAZEA_USERS:
@@ -353,14 +120,6 @@ async def bio(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
@@ -380,14 +139,6 @@ async def _(e):
            
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/HGYs1wvsPUplMmM1\n\n.pjoin HGYs1wvsPUplMmM1"
@@ -407,14 +158,6 @@ async def _(e):
             
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
@@ -435,14 +178,6 @@ async def _(e):
             
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
@@ -476,14 +211,6 @@ async def spam(e):
             
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."
@@ -525,14 +252,6 @@ async def spam(e):
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
@@ -570,14 +289,6 @@ async def spam(e):
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
@@ -618,14 +329,7 @@ async def spam(e):
 
 @bla.on(events.NewMessage(incoming=True))
 @blb.on(events.NewMessage(incoming=True))
-@blc.on(events.NewMessage(incoming=True))
-@bld.on(events.NewMessage(incoming=True))
-@ble.on(events.NewMessage(incoming=True))
-@blf.on(events.NewMessage(incoming=True))
-@blg.on(events.NewMessage(incoming=True))
-@blh.on(events.NewMessage(incoming=True))
-@bli.on(events.NewMessage(incoming=True))
-@blj.on(events.NewMessage(incoming=True))
+
 
 async def _(event):
     global que
