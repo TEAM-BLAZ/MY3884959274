@@ -6,7 +6,7 @@ from os import execl
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.functions.account import UpdateProfileRequest
-from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2
+from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4, STRING5
 import asyncio
 import telethon.utils
 from telethon.tl import functions
@@ -18,9 +18,15 @@ api = API_ID
 hash = API_HASH
 blazea = STRING
 blazeb = STRING2
+blazec = STRING3
+blazed = STRING4
+blazee = STRING5
 
 bla = ""
 blb = ""
+blc = ""
+bld = ""
+ble = ""
 
 que = {}
 
@@ -31,7 +37,9 @@ for x in SUDO:
 async def start_BLaZe():
     global bla
     global blb
-
+    global blc
+    global bld
+    global ble
 
     if blazea:
         session_name = str(blazea)
@@ -83,6 +91,83 @@ async def start_BLaZe():
         except Exception as e:
             pass
 
+    if blazec:
+        session_name = str(blazec)
+        print("String 3 Found")
+        blc = TelegramClient(StringSession(session_name), api, hash)
+        try:
+            print("Booting Up The Client 3")
+            await blc.start()
+            botme = await blc.get_me()
+            await blc(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
+            await blc(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            botid = telethon.utils.get_peer_id(botme)
+            BLAZEA_USERS.append(botid)
+        except Exception as e:
+          
+            print(e)
+            pass
+    else:
+        print("Session 3 not Found")
+        session_name = "startup"
+        blc = TelegramClient(session_name, api, hash)
+        try:
+            await blc.start()
+        except Exception as e:
+            pass
+
+    if blazed:
+        session_name = str(blazed)
+        print("String 4 Found")
+        bld = TelegramClient(StringSession(session_name), api, hash)
+        try:
+            print("Booting Up The Client 4")
+            await bld.start()
+            botme = await bld.get_me()
+            await bld(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
+            await bld(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            botid = telethon.utils.get_peer_id(botme)
+            BLAZEA_USERS.append(botid)
+        except Exception as e:
+          
+            print(e)
+            pass
+    else:
+        print("Session 4 not Found")
+        session_name = "startup"
+        bld = TelegramClient(session_name, api, hash)
+        try:
+            await bld.start()
+        except Exception as e:
+            pass
+
+
+    if blazee:
+        session_name = str(blazee)
+        print("String 5 Found")
+        ble = TelegramClient(StringSession(session_name), api, hash)
+        try:
+            print("Booting Up The Client 5")
+            await ble.start()
+            botme = await ble.get_me()
+            await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
+            await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            botid = telethon.utils.get_peer_id(botme)
+            BLAZEA_USERS.append(botid)
+        except Exception as e:
+          
+            print(e)
+            pass
+    else:
+        print("Session 5 not Found")
+        session_name = "startup"
+        ble = TelegramClient(session_name, api, hash)
+        try:
+            await ble.start()
+        except Exception as e:
+            pass
+
+
 loop = asyncio.get_event_loop()
 loop.run_until_complete(start_BLaZe())       
 
@@ -103,6 +188,9 @@ async def gifspam(e, blazea):
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 async def bio(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
     if e.sender_id in BLAZEA_USERS:
@@ -120,7 +208,9 @@ async def bio(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
     if e.sender_id in BLAZEA_USERS:
