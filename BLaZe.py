@@ -351,6 +351,9 @@ async def spam(e):
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
@@ -388,6 +391,9 @@ async def spam(e):
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
@@ -428,7 +434,9 @@ async def spam(e):
 
 @bla.on(events.NewMessage(incoming=True))
 @blb.on(events.NewMessage(incoming=True))
-
+@blc.on(events.NewMessage(incoming=True))
+@bld.on(events.NewMessage(incoming=True))
+@ble.on(events.NewMessage(incoming=True))
 
 async def _(event):
     global que
@@ -446,6 +454,9 @@ async def _(event):
             
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 
 async def _(e):
     global que
@@ -480,6 +491,9 @@ async def _(e):
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 
 async def _(e):
     global que
