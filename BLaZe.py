@@ -347,14 +347,6 @@ async def _(event):
             
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 
 async def _(e):
     global que
@@ -389,14 +381,6 @@ async def _(e):
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 
 async def _(e):
     global que
@@ -433,15 +417,7 @@ async def _(e):
     
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-         
+
 async def ping(e):
     if e.sender_id in BLAZEA_USERS:
         start = datetime.now()
@@ -453,14 +429,6 @@ async def ping(e):
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 
 
 async def restart(e):
@@ -475,38 +443,6 @@ async def restart(e):
             await blb.disconnect()
         except Exception as e:
             pass
-        try:
-            await blc.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await bld.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await ble.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await blf.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await blg.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await blh.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await bli.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await blj.disconnect()
-        except Exception as e:
-            pass
 
             
         os.execl(sys.executable, sys.executable, *sys.argv)
@@ -515,14 +451,6 @@ async def restart(e):
         
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@blf.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@blg.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@blh.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@bli.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@blj.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 
 async def help(e):
     if e.sender_id in BLAZEA_USERS:
@@ -545,39 +473,7 @@ if len(sys.argv) not in (1, 3, 4):
         blb.disconnect()
     except Exception as e:
         pass
-    try:
-        blc.disconnect()
-    except Exception as e:
-        pass
-    try:
-        bld.disconnect()
-    except Exception as e:
-        pass
-    try:
-        ble.disconnect()
-    except Exception as e:
-        pass
-    try:
-        blf.disconnect()
-    except Exception as e:
-        pass
-    try:
-        blg.disconnect()
-    except Exception as e:
-        pass
-    try:
-        blh.disconnect()
-    except Exception as e:
-        pass
-    try:
-        bli.disconnect()
-    except Exception as e:
-        pass
-    try:
-        blj.disconnect()
-    except Exception as e:
-        pass
- 
+
 else:
     
     try:
@@ -588,36 +484,3 @@ else:
         blb.run_until_disconnected()
     except Exception as e:
         pass
-    try:
-        blc.run_until_disconnected()
-    except Exception as e:
-        pass
-    try:
-        bld.run_until_disconnected()
-    except Exception as e:
-        pass
-    try:
-        ble.run_until_disconnected()
-    except Exception as e:
-        pass
-    try:
-        blf.run_until_disconnected()
-    except Exception as e:
-        pass
-    try:
-        blg.run_until_disconnected()
-    except Exception as e:
-        pass
-    try:
-        blh.run_until_disconnected()
-    except Exception as e:
-        pass
-    try:
-        bli.run_until_disconnected()
-    except Exception as e:
-        pass
-    try:
-        blj.run_until_disconnected()
-    except Exception as e:
-        pass
-   
