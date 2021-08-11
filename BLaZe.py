@@ -339,7 +339,7 @@ async def gifspam(e, blazea):
 async def bio(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
     if e.sender_id in BLAZEA_USERS:
-        bLaZe = ("".bio(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
+        bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
         if len(e.text) > 5:
             bio = str(bLaZe[0])
             text = "Changing Bio"
@@ -392,7 +392,7 @@ async def _(e):
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/HGYs1wvsPUplMmM1\n\n.pjoin HGYs1wvsPUplMmM1"
     if e.sender_id in BLAZEA_USERS:
-        bLaZe = ("".pjoin(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
             bc = bLaZe[0]
             text = "Joining...."
@@ -419,7 +419,7 @@ async def _(e):
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in BLAZEA_USlERS:
-        bLaZe = ("".leave(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) == 7:
             bc = bLaZe[0]
             bc = int(bc)
