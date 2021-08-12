@@ -20,13 +20,13 @@ blazea = STRING
 blazeb = STRING2
 blazec = STRING3
 blazed = STRING4
-blazee = STRING5
+
 
 bla = ""
 blb = ""
 blc = ""
 bld = ""
-ble = ""
+
 
 que = {}
 
@@ -39,7 +39,7 @@ async def start_BLaZe():
     global blb
     global blc
     global bld
-    global ble
+ 
 
     if blazea:
         session_name = str(blazea)
@@ -142,30 +142,6 @@ async def start_BLaZe():
             pass
 
 
-    if blazee:
-        session_name = str(blazee)
-        print("String 5 Found")
-        ble = TelegramClient(StringSession(session_name), api, hash)
-        try:
-            print("Booting Up The Client 5")
-            await ble.start()
-            botme = await ble.get_me()
-            await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
-            botid = telethon.utils.get_peer_id(botme)
-            BLAZEA_USERS.append(botid)
-        except Exception as e:
-          
-            print(e)
-            pass
-    else:
-        print("Session 5 not Found")
-        session_name = "startup"
-        ble = TelegramClient(session_name, api, hash)
-        try:
-            await ble.start()
-        except Exception as e:
-            pass
 
 
 loop = asyncio.get_event_loop()
@@ -190,7 +166,6 @@ async def gifspam(e, blazea):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 async def bio(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
     if e.sender_id in BLAZEA_USERS:
