@@ -166,7 +166,8 @@ async def gifspam(e, blazea):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-async def bio(e):
+
+async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
     if e.sender_id in BLAZEA_USERS:
         bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
@@ -181,11 +182,16 @@ async def bio(e):
                 await event.edit(str(e))   
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
+
+
+
 @bla.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+
+
+
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
     if e.sender_id in BLAZEA_USERS:
@@ -206,7 +212,8 @@ async def _(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+
+
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/HGYs1wvsPUplMmM1\n\n.pjoin HGYs1wvsPUplMmM1"
     if e.sender_id in BLAZEA_USERS:
@@ -227,11 +234,11 @@ async def _(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in BLAZEA_USlERS:
-        bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        bLaZe = ("".leave(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) == 7:
             bc = bLaZe[0]
             bc = int(bc)
@@ -249,7 +256,7 @@ async def _(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
     error = "Spam Module can only be used till 100 count. For bigger spams use BigSpam."
@@ -284,7 +291,7 @@ async def spam(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
+
 
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."
@@ -328,7 +335,7 @@ async def spam(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+
 
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
@@ -368,7 +375,7 @@ async def spam(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+
 
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
@@ -411,7 +418,7 @@ async def spam(e):
 @blb.on(events.NewMessage(incoming=True))
 @blc.on(events.NewMessage(incoming=True))
 @bld.on(events.NewMessage(incoming=True))
-@ble.on(events.NewMessage(incoming=True))
+
 
 async def _(event):
     global que
@@ -431,9 +438,8 @@ async def _(event):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 
-async def _(e):
+async def spam(e):
     global que
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>"
     if e.sender_id in BLAZEA_USERS:
@@ -468,7 +474,6 @@ async def _(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 
 async def _(e):
     global que
@@ -507,7 +512,6 @@ async def _(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 
 async def ping(e):
     if e.sender_id in BLAZEA_USERS:
@@ -522,7 +526,7 @@ async def ping(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+
 
 
 async def restart(e):
@@ -559,7 +563,7 @@ async def restart(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+
 
 async def help(e):
     if e.sender_id in BLAZEA_USERS:
