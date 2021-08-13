@@ -20,7 +20,7 @@ blazea = STRING
 blazeb = STRING2
 blazec = STRING3
 blazed = STRING4
-blazed = STRING5
+blazee = STRING5
 
 
 bla = ""
