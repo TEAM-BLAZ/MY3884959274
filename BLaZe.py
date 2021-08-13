@@ -461,6 +461,7 @@ async def spam(e):
 @blb.on(events.NewMessage(incoming=True))
 @blc.on(events.NewMessage(incoming=True))
 @bld.on(events.NewMessage(incoming=True))
+@ble.on(events.NewMessage(incoming=True))
 
 
 async def _(event):
@@ -481,6 +482,7 @@ async def _(event):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 
 async def spam(e):
     global que
@@ -517,6 +519,8 @@ async def spam(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+
 
 async def _(e):
     global que
@@ -555,6 +559,7 @@ async def _(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 
 async def ping(e):
     if e.sender_id in BLAZEA_USERS:
@@ -569,6 +574,7 @@ async def ping(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 
 
 
@@ -596,6 +602,7 @@ async def restart(e):
             await ble.disconnect()
         except Exception as e:
             pass
+        
 
             
         os.execl(sys.executable, sys.executable, *sys.argv)
@@ -606,6 +613,7 @@ async def restart(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 
 
 async def help(e):
