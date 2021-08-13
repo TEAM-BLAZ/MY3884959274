@@ -6,7 +6,7 @@ from os import execl
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.functions.account import UpdateProfileRequest
-from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4
+from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4, STRING5
 import asyncio
 import telethon.utils
 from telethon.tl import functions
@@ -20,12 +20,14 @@ blazea = STRING
 blazeb = STRING2
 blazec = STRING3
 blazed = STRING4
+blazed = STRING5
 
 
 bla = ""
 blb = ""
 blc = ""
 bld = ""
+ble = ""
 
 
 que = {}
@@ -39,6 +41,7 @@ async def start_BLaZe():
     global blb
     global blc
     global bld
+    global ble
  
 
     if blazea:
@@ -141,6 +144,33 @@ async def start_BLaZe():
         except Exception as e:
             pass
 
+    if blazee:
+        session_name = str(blazee)
+        print("String 5 Found")
+        ble = TelegramClient(StringSession(session_name), api, hash)
+        try:
+            print("Booting Up The Client 5")
+            await ble.start()
+            botme = await ble.get_me()
+            await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
+            await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            botid = telethon.utils.get_peer_id(botme)
+            BLAZEA_USERS.append(botid)
+        except Exception as e:
+          
+            print(e)
+            pass
+    else:
+        print("Session 5 not Found")
+        session_name = "startup"
+        ble = TelegramClient(session_name, api, hash)
+        try:
+            await ble.start()
+        except Exception as e:
+            pass
+
+
+
 
 
 
@@ -166,6 +196,10 @@ async def gifspam(e, blazea):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+
+
+
 
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
@@ -189,6 +223,7 @@ async def _(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 
 
 
@@ -212,6 +247,7 @@ async def _(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 
 
 async def _(e):
@@ -234,6 +270,8 @@ async def _(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+
 
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
@@ -256,6 +294,8 @@ async def _(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+
 
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
@@ -291,6 +331,7 @@ async def spam(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 
 
 async def spam(e):
@@ -335,6 +376,7 @@ async def spam(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 
 
 async def spam(e):
@@ -375,6 +417,7 @@ async def spam(e):
 @blb.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 
 
 async def spam(e):
