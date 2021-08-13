@@ -27,12 +27,6 @@
         "description": "Telethon String Session",
         "value": "",
         "required": false
-      },
-      "STRING5": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-
      },
       "API_ID": {
         "description": "Telethon String Session",
