@@ -242,8 +242,8 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
            
-@bla.on(events.NewMessage(incoming=True, pattern=r"\ {CMD} pjoin"))
-@blb.on(events.NewMessage(incoming=True, pattern=r"\ {CMD}pjoin"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
+@blb.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
 @ble.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
@@ -667,4 +667,4 @@ else:
     try:
         ble.run_until_disconnected()
     except Exception as e:
-        pass
+        pass {CMD}
