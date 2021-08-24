@@ -43,6 +43,11 @@
         "value": "",
         "required": true
       },
+      "CMD": {
+        "description": "CMD",
+        "value": ".",
+        "required": true
+      },
       "SUDO": {
         "description": "Sudo Users Id",
         "value": "1922242462",
