@@ -667,4 +667,4 @@ else:
     try:
         ble.run_until_disconnected()
     except Exception as e:
-        pass {CMD}
+        pass
