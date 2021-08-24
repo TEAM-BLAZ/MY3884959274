@@ -6,7 +6,7 @@ from os import execl
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.functions.account import UpdateProfileRequest
-from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4, STRING5
+from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4, STRING5, CMD
 import asyncio
 import telethon.utils
 from telethon.tl import functions
@@ -216,11 +216,11 @@ async def gifspam(e, blazea):
     except Exception as e:
         pass
 
-@bla.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@blb.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bio"))
+@blb.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bio"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bio"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bio"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bio"))
 
 
 
@@ -243,11 +243,11 @@ async def _(e):
 
 
 
-@bla.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@blb.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\{CMD}join"))
+@blb.on(events.NewMessage(incoming=True, pattern=r"\{CMD}join"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\{CMD}join"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\{CMD}join"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\{CMD}join"))
 
 
 
@@ -267,11 +267,11 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
            
-@bla.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@blb.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
+@blb.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
 
 
 async def _(e):
@@ -396,11 +396,11 @@ async def spam(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-@bla.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@blb.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bigspam"))
+@blb.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bigspam"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bigspam"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bigspam"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bigspam"))
 
 
 async def spam(e):
