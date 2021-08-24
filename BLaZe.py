@@ -344,6 +344,107 @@ async def start_BLaZe():
         except Exception as e:
             pass
 
+    if blazej:
+        session_name = str(blazej)
+        print("String 10 Found")
+        blj = TelegramClient(StringSession(session_name), api, hash)
+        try:
+            print("Booting Up The Client 10")
+            await blj.start()
+            botme = await blj.get_me()
+            await blj(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
+            await blj(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            botid = telethon.utils.get_peer_id(botme)
+            BLAZEA_USERS.append(botid)
+        except Exception as e:
+          
+            print(e)
+            pass
+    else:
+        print("Session 10 not Found")
+        session_name = "startup"
+        blj = TelegramClient(session_name, api, hash)
+        try:
+            await blj.start()
+        except Exception as e:
+            pass
+
+    if blazec:
+        session_name = str(blazec)
+        print("String 3 Found")
+        blc = TelegramClient(StringSession(session_name), api, hash)
+        try:
+            print("Booting Up The Client 3")
+            await blc.start()
+            botme = await blc.get_me()
+            await blc(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
+            await blc(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            botid = telethon.utils.get_peer_id(botme)
+            BLAZEA_USERS.append(botid)
+        except Exception as e:
+          
+            print(e)
+            pass
+    else:
+        print("Session 3 not Found")
+        session_name = "startup"
+        blc = TelegramClient(session_name, api, hash)
+        try:
+            await blc.start()
+        except Exception as e:
+            pass
+
+    if blazed:
+        session_name = str(blazed)
+        print("String 4 Found")
+        bld = TelegramClient(StringSession(session_name), api, hash)
+        try:
+            print("Booting Up The Client 4")
+            await bld.start()
+            botme = await bld.get_me()
+            await bld(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
+            await bld(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            botid = telethon.utils.get_peer_id(botme)
+            BLAZEA_USERS.append(botid)
+        except Exception as e:
+          
+            print(e)
+            pass
+    else:
+        print("Session 4 not Found")
+        session_name = "startup"
+        bld = TelegramClient(session_name, api, hash)
+        try:
+            await bld.start()
+        except Exception as e:
+            pass
+
+    if blazee:
+        session_name = str(blazee)
+        print("String 5 Found")
+        ble = TelegramClient(StringSession(session_name), api, hash)
+        try:
+            print("Booting Up The Client 5")
+            await ble.start()
+            botme = await ble.get_me()
+            await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
+            await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            botid = telethon.utils.get_peer_id(botme)
+            BLAZEA_USERS.append(botid)
+        except Exception as e:
+          
+            print(e)
+            pass
+    else:
+        print("Session 5 not Found")
+        session_name = "startup"
+        ble = TelegramClient(session_name, api, hash)
+        try:
+            await ble.start()
+        except Exception as e:
+            pass
+
+
 
 
 
