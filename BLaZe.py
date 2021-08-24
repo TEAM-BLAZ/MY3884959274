@@ -6,7 +6,7 @@ from os import execl
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.functions.account import UpdateProfileRequest
-from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4, STRING5, CMD
+from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4, STRING5, CMD,
 import asyncio
 import telethon.utils
 from telethon.tl import functions
@@ -242,8 +242,8 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
            
-@bla.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
-@blb.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\ {CMD} pjoin"))
+@blb.on(events.NewMessage(incoming=True, pattern=r"\ {CMD}pjoin"))
 @blc.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
 @ble.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
