@@ -6,7 +6,7 @@ from os import execl
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.functions.account import UpdateProfileRequest
-from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4, STRING5, CMD,
+from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4, STRING5, 
 import asyncio
 import telethon.utils
 from telethon.tl import functions
@@ -128,7 +128,7 @@ async def start_BLaZe():
             await bla.start()
             botme = await bla.get_me()
             await bla(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await bla(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            await bla(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -153,7 +153,7 @@ async def start_BLaZe():
             await blb.start()
             botme = await blb.get_me()
             await blb(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await blb(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            await blb(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -178,7 +178,7 @@ async def start_BLaZe():
             await blc.start()
             botme = await blc.get_me()
             await blc(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await blc(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            await blc(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -203,7 +203,7 @@ async def start_BLaZe():
             await bld.start()
             botme = await bld.get_me()
             await bld(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await bld(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            await bld(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -228,7 +228,7 @@ async def start_BLaZe():
             await ble.start()
             botme = await ble.get_me()
             await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            await ble(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -253,7 +253,7 @@ async def start_BLaZe():
             await blf.start()
             botme = await blf.get_me()
             await blf(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await blf(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            await blf(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -278,7 +278,7 @@ async def start_BLaZe():
             await blg.start()
             botme = await blg.get_me()
             await blg(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await blg(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            await blg(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -303,7 +303,7 @@ async def start_BLaZe():
             await blh.start()
             botme = await bld.get_me()
             await blh(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await blh(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            await blh(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -328,7 +328,7 @@ async def start_BLaZe():
             await bli.start()
             botme = await ble.get_me()
             await bli(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await bli(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            await bli(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -353,7 +353,7 @@ async def start_BLaZe():
             await blj.start()
             botme = await blj.get_me()
             await blj(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await blj(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            await blj(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -378,7 +378,7 @@ async def start_BLaZe():
             await blc.start()
             botme = await blc.get_me()
             await blc(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await blc(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            await blc(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -403,7 +403,7 @@ async def start_BLaZe():
             await bld.start()
             botme = await bld.get_me()
             await bld(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await bld(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            await bld(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -428,7 +428,7 @@ async def start_BLaZe():
             await ble.start()
             botme = await ble.get_me()
             await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_ZONE"))           
+            await ble(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -468,11 +468,11 @@ async def gifspam(e, blazea):
     except Exception as e:
         pass
 
-@bla.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bio"))
-@blb.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bio"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bio"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bio"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bio"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+@blb.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 
 
 
@@ -495,11 +495,11 @@ async def _(e):
 
 
 
-@bla.on(events.NewMessage(incoming=True, pattern=r"\{CMD}join"))
-@blb.on(events.NewMessage(incoming=True, pattern=r"\{CMD}join"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\{CMD}join"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\{CMD}join"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\{CMD}join"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@blb.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 
 
 
@@ -519,11 +519,11 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
            
-@bla.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
-@blb.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\{CMD}pjoin"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@blb.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 
 
 async def _(e):
@@ -648,11 +648,11 @@ async def spam(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-@bla.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bigspam"))
-@blb.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bigspam"))
-@blc.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bigspam"))
-@bld.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bigspam"))
-@ble.on(events.NewMessage(incoming=True, pattern=r"\{CMD}bigspam"))
+@bla.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@blb.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 
 
 async def spam(e):
