@@ -369,16 +369,16 @@ async def start_BLaZe():
         except Exception as e:
             pass
 
-    if blazec:
-        session_name = str(blazec)
-        print("String 3 Found")
-        blc = TelegramClient(StringSession(session_name), api, hash)
+    if blazek:
+        session_name = str(blazek)
+        print("String 11 Found")
+        blk = TelegramClient(StringSession(session_name), api, hash)
         try:
-            print("Booting Up The Client 3")
-            await blc.start()
-            botme = await blc.get_me()
-            await blc(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await blc(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
+            print("Booting Up The Client 11")
+            await blk.start()
+            botme = await blk.get_me()
+            await blk(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
+            await blk(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -386,24 +386,24 @@ async def start_BLaZe():
             print(e)
             pass
     else:
-        print("Session 3 not Found")
+        print("Session 11 not Found")
         session_name = "startup"
-        blc = TelegramClient(session_name, api, hash)
+        blk = TelegramClient(session_name, api, hash)
         try:
-            await blc.start()
+            await blk.start()
         except Exception as e:
             pass
 
-    if blazed:
-        session_name = str(blazed)
-        print("String 4 Found")
-        bld = TelegramClient(StringSession(session_name), api, hash)
+    if blazel:
+        session_name = str(blazel)
+        print("String 12 Found")
+        bll = TelegramClient(StringSession(session_name), api, hash)
         try:
-            print("Booting Up The Client 4")
-            await bld.start()
-            botme = await bld.get_me()
-            await bld(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await bld(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
+            print("Booting Up The Client 12")
+            await bll.start()
+            botme = await bll.get_me()
+            await bll(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
+            await bll(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -411,24 +411,24 @@ async def start_BLaZe():
             print(e)
             pass
     else:
-        print("Session 4 not Found")
+        print("Session 12 not Found")
         session_name = "startup"
-        bld = TelegramClient(session_name, api, hash)
+        bll = TelegramClient(session_name, api, hash)
         try:
-            await bld.start()
+            await bll.start()
         except Exception as e:
             pass
 
-    if blazee:
-        session_name = str(blazee)
-        print("String 5 Found")
-        ble = TelegramClient(StringSession(session_name), api, hash)
+    if blazem:
+        session_name = str(blazem)
+        print("String 13 Found")
+        blm = TelegramClient(StringSession(session_name), api, hash)
         try:
-            print("Booting Up The Client 5")
-            await ble.start()
-            botme = await ble.get_me()
-            await ble(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
-            await ble(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
+            print("Booting Up The Client 13")
+            await blm.start()
+            botme = await blm.get_me()
+            await blm(functions.channels.JoinChannelRequest(channel="@BLAZE_SPAMMER"))
+            await blm(functions.channels.JoinChannelRequest(channel="@THE_BLAZE_NETWORK"))           
             botid = telethon.utils.get_peer_id(botme)
             BLAZEA_USERS.append(botid)
         except Exception as e:
@@ -436,11 +436,11 @@ async def start_BLaZe():
             print(e)
             pass
     else:
-        print("Session 5 not Found")
+        print("Session 13 not Found")
         session_name = "startup"
-        ble = TelegramClient(session_name, api, hash)
+        blm = TelegramClient(session_name, api, hash)
         try:
-            await ble.start()
+            await blm.start()
         except Exception as e:
             pass
 
