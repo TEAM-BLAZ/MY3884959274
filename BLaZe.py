@@ -46,6 +46,7 @@ blazeaa = STRING27
 blazeab = STRING28
 blazeac = STRING29
 blazead = STRING30
+blazeae = STRING31
 
 bla = ""
 blb = ""
@@ -77,7 +78,7 @@ baa = ""
 bab = ""
 bac = ""
 bad = ""
-
+bae = ""
 
 que = {}
 
@@ -116,7 +117,7 @@ async def start_BLaZe():
     global bab
     global bac
     global bad
-
+    global bae
  
 
     if blazea:
