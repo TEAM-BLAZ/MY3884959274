@@ -1527,6 +1527,8 @@ async def spam(e):
 @bab.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @bac.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @bad.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@bae.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+
 
 
 
@@ -1679,6 +1681,32 @@ async def restart(e):
 @blc.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @ble.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blf.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blg.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blh.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@bli.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blj.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@bll.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blm.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@bln.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blo.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blp.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blq.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blr.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@bls.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blt.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blu.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blv.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blw.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blx.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@bly.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@blz.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@baa.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@bab.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@bac.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@bad.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@bae.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 
 
 async def help(e):
