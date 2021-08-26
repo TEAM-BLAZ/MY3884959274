@@ -1739,6 +1739,110 @@ if len(sys.argv) not in (1, 3, 4):
         ble.disconnect()
     except Exception as e:
         pass
+    try:
+        blf.disconnect()
+    except Exception as e:
+        pass    
+    try:
+        blg.disconnect()
+    except Exception as e:
+        pass
+    try:
+        blh.disconnect()
+    except Exception as e:
+        pass
+    try:
+        bli.disconnect()
+    except Exception as e:
+        pass
+    try:
+        blj.disconnect()
+    except Exception as e:
+        pass
+    try:
+        blk.disconnect()
+    except Exception as e:
+        pass    
+    try:
+        bll.disconnect()
+    except Exception as e:
+        pass
+    try:
+        blm.disconnect()
+    except Exception as e:
+        pass
+    try:
+        bln.disconnect()
+    except Exception as e:
+        pass
+    try:
+        blo.disconnect()
+    except Exception as e:
+        pass
+    try:
+        blp.disconnect()
+    except Exception as e:
+        pass    
+    try:
+        blq.disconnect()
+    except Exception as e:
+        pass
+    try:
+        blr.disconnect()
+    except Exception as e:
+        pass
+    try:
+        bls.disconnect()
+    except Exception as e:
+        pass
+    try:
+        blt.disconnect()
+    except Exception as e:
+        pass
+    try:
+        blu.disconnect()
+    except Exception as e:
+        pass    
+    try:
+        blv.disconnect()
+    except Exception as e:
+        pass
+    try:
+        blw.disconnect()
+    except Exception as e:
+        pass
+    try:
+        blx.disconnect()
+    except Exception as e:
+        pass
+    try:
+        bly.disconnect()
+    except Exception as e:
+        pass
+    try:
+        blz.disconnect()
+    except Exception as e:
+        pass    
+    try:
+        baa.disconnect()
+    except Exception as e:
+        pass
+    try:
+        bab.disconnect()
+    except Exception as e:
+        pass
+    try:
+        bac.disconnect()
+    except Exception as e:
+        pass
+    try:
+        bad.disconnect()
+    except Exception as e:
+        pass
+    try:
+        bae.disconnect()
+    except Exception as e:
+        pass    
 
 else:
     
