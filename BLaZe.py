@@ -1853,15 +1853,13 @@ async def spam(e):
 @baw.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @bax.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 
-
-
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
     if e.sender_id in BLAZEA_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        blazea = await e.get_reply_message()
+        bLaZea = await e.get_reply_message()
         if len(bLaZe) == 2:
             message = str(bLaZe[1])
             print(message)
@@ -1869,7 +1867,7 @@ async def spam(e):
             g = a.id
             c = a.first_name
             username = f"[{c}](tg://user?id={g})"
-            counter = int(BLaZe[0])
+            counter = int(bLaZe[0])
             for _ in range(counter):
                 reply = random.choice(RAID)
                 caption = f"{username} {reply}"
@@ -1891,6 +1889,9 @@ async def spam(e):
                     await asyncio.sleep(0.3)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
+
+
+
 
 
 @blb.on(events.NewMessage(incoming=True))
