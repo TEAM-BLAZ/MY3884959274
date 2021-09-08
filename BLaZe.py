@@ -1892,8 +1892,6 @@ async def spam(e):
 
 
 
-
-
 @blb.on(events.NewMessage(incoming=True))
 @blc.on(events.NewMessage(incoming=True))
 @bld.on(events.NewMessage(incoming=True))
