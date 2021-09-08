@@ -1775,7 +1775,7 @@ async def spam(e):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         bLaZea = await e.get_reply_message()
-        if len(rizoel) == 2:
+        if len(bLaZe) == 2:
             message = str(bLaZe[1])
             counter = int(bLaZe[0])
             for _ in range(counter):
