@@ -1774,26 +1774,26 @@ async def spam(e):
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         bLaZe = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        blazea = await e.get_reply_message()
-        if len(bLaZe) == 2:
+        bLaZea = await e.get_reply_message()
+        if len(rizoel) == 2:
             message = str(bLaZe[1])
             counter = int(bLaZe[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     if e.reply_to_msg_id:
-                        await blazea.reply(message)
+                        await bLaZea.reply(message)
                     else:
                         await e.client.send_message(e.chat_id, message)
                     await asyncio.sleep(0.1)
-        elif e.reply_to_msg_id and blazea.media:  
-            counter = int(blaze[0])
+        elif e.reply_to_msg_id and bLaZea.media:  
+            counter = int(bLaZe[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "document"):
-                    blazea = await e.client.send_file(e.chat_id, blazea, caption=blazea.text)
-                    await gifspam(e, blazea) 
+                    bLaZea = await e.client.send_file(e.chat_id, bLaZea, caption=bLaZea.text)
+                    await gifspam(e, bLaZea) 
                 await asyncio.sleep(0.1)  
-        elif e.reply_to_msg_id and blazea.text:
-            message = blazea.text
+        elif e.reply_to_msg_id and bLaZea.text:
+            message = bLaZea.text
             counter = int(bLaZe[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
