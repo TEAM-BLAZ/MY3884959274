@@ -13,6 +13,7 @@ from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 from Utils import RAID, RRAID
+import pyrogram.types
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 api = API_ID
