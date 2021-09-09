@@ -16,8 +16,8 @@
 #  You should have received a copy of the GNU Lesser General Public License
 #  along with Pyrogram.  If not, see <http://www.gnu.org/licenses/>.
 
-from .InlineKeyboardButton import InlineKeyboardButton
-from .InlineKeyboardMarkup import InlineKeyboardMarkup
+from .inline_keyboard_button import InlineKeyboardButton
+from .inline_keyboard_markup import InlineKeyboardMarkup
 
 
 __all__ = [
