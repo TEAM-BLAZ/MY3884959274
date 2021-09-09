@@ -2520,6 +2520,34 @@ async def repo(e):
         ms = (end-start).microseconds / 1000
         await event.edit(f"▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱ \n➤ 𝐃𝐄𝐏𝐋𝐎𝐘 𝐓𝐎 50 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓𝐒 𝐈𝐍 𝐎𝐍 𝐓𝐌𝐄...\n➤ 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- [#𝗧𝗛𝗘_𝗕𝗟𝗔𝗭𝗘_𝗡𝗘𝗧𝗪𝗢𝗥𝗞](https://t.me/BLAZE_SPAMMER)\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n ┏━━━━━━━━━━━━━━━━━━━━━\n ┣➤∆ 𝚅𝙴𝚁𝚈 𝙵𝙰𝚂𝚃 𝚂𝙿𝙰𝙼...\n ┣    ∆ 𝙽𝙾𝙽 𝚂𝚃𝙾𝙿 𝚂𝙿𝙰𝙼...    \n ┣ 🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰\n ┣\n ┣ ┈ ➤  🔱   [𝗥𝗘𝗣𝗢](https://github.com/TEAM-BLAZ/BLAZE-SPAMMER-ROBOT)      \n ┣      \n ┣  ┈➤  🔱   [𝗦𝗧𝗥𝗜𝗡𝗚](https://replit.com/@BLAZE-NETWORK/BLAZE-SPAMMER)\n ┣\n ┗━━━━━━━━━━━━━━━━━━━━━")
 
+@bla.on(events.NewMessage(incoming=True, pattern=r"\,hi"))
+
+async def hi(e):
+    if e.sender_id in BLAZEA_USERS:
+        start = datetime.now()
+        text = "★★вℓαᘔε ηε✞ሠᎾяᏦ★★"
+        event = await e.reply(text, parse_mode=None, link_preview=None )
+        end = datetime.now()
+        ms = (end-start).microseconds / 1000
+        await event.edit(
+        caption=f"""<b>hi hello how r u </b>""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "яερσ",
+                        url=f"https://github.com/TEAM-BLAZ/BLAZE-SPAMMER-ROBOT",
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "💬 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/BLAZE_SPAMMER"
+                    ),
+                    InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ 🧑🏻‍💻", url=f"https://t.me/UNKNOWN_SHADOW_XD"),
+                ],                
+            ]
+        ),
+    )
 
 
 text = """🔰✘𓆩βƖꪖƹꫀ sρꪖꪑꪑε𝚁 ʀꪮʙʙꪮᴛ Ꭵs 𝙈𝙊𝘿𝙄𝙁𝙄𝙀𝘿...🔰"""
