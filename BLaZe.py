@@ -663,7 +663,7 @@ async def gifspam(e, blazea):
 @blu.on(events.NewMessage(incoming=True, pattern=r"\,spam"))
 
 async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\ncσммαη∂:\n\n,вs∂к <cσυηт> <мεssαgε тσ sραм>\n\n,вs∂к <cσυηт> <яερℓү тσ α мεssαgε>\n\ncσυηт мυsт вε α ιηтεgεя."
     error = "Spam Module can only be used till 100 count. For bigger spams use BigSpam."
     if e.sender_id in BLAZEA_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
