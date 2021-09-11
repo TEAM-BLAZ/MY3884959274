@@ -713,25 +713,6 @@ async def spam(e):
 @bls.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
 @blt.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
 @blu.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@blv.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@blw.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@blx.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@bly.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@blz.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@baa.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@bab.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@bac.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@bad.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@bae.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@blm.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@bln.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@blo.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@blp.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@blq.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@blr.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@bls.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@blt.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
-@blu.on(events.NewMessage(incoming=True, pattern=r"\,delayspam"))
 
 
 
@@ -1269,7 +1250,7 @@ if len(sys.argv) not in (1, 3, 4):
         pass
     try:
         bli.disconnect()
-    except Exception as e:
+    except Exception as e: 
         pass
     try:
         blj.disconnect()
