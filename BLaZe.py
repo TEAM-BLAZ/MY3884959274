@@ -1223,7 +1223,7 @@ if not amaan786:
 @blb.on(events.NewMessage(incoming=True, pattern=r"\,alive"))
 
 async def alive(event):
-  if event.sender_id in SMEX_USERS:
+  if event.sender_id in BLAZEA_USERS:
     sed = await event.client.get_me()
     kk = sed.first_name
     k = sed.id
