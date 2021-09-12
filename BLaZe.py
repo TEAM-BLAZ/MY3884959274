@@ -1213,9 +1213,9 @@ async def repo(e):
         await event.edit(f"▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱ \n➤ 𝐃𝐄𝐏𝐋𝐎𝐘 𝐓𝐎 50 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓𝐒 𝐈𝐍 𝐎𝐍 𝐓𝐌𝐄...\n➤ 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- [#𝗧𝗛𝗘_𝗕𝗟𝗔𝗭𝗘_𝗡𝗘𝗧𝗪𝗢𝗥𝗞](https://t.me/BLAZE_SPAMMER)\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n ┏━━━━━━━━━━━━━━━━━━━━━\n ┣➤∆ 𝚅𝙴𝚁𝚈 𝙵𝙰𝚂𝚃 𝚂𝙿𝙰𝙼...\n ┣    ∆ 𝙽𝙾𝙽 𝚂𝚃𝙾𝙿 𝚂𝙿𝙰𝙼...    \n ┣ 🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰\n ┣\n ┣ ┈ ➤  🔱   [𝗥𝗘𝗣𝗢](https://github.com/TEAM-BLAZ/BLAZE-SPAMMER-ROBOT)      \n ┣      \n ┣  ┈➤  🔱   [𝗦𝗧𝗥𝗜𝗡𝗚](https://replit.com/@BLAZE-NETWORK/BLAZE-SPAMMER)\n ┣\n ┗━━━━━━━━━━━━━━━━━━━━━")
 #################
 import os
-amaan786 = os.environ.get("ALIVE_PIC",None)
-if not amaan786:
- amaan786="https://telegra.ph/file/ccf8de8cd3780b32b4d73.jpg"
+blazespammer = os.environ.get("ALIVE_PIC",None)
+if not blazespammer:
+ blazespammer="https://telegra.ph/file/2ab64117e0f74971ddb9e.jpg"
 #################
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\,alive"))
@@ -1235,7 +1235,7 @@ Aʟʟ Sʏsᴛᴇᴍs Aʀᴇ Wᴏʀᴋɪɴɢ Pʀᴏᴘᴇʟʏ!!
 Mᴀsᴛᴇʀ:-** **[『 ツᴅɪᴄͥᴛᴀᴛᴏͣʀͫ乛ᴀᴍᴀᴀɴ々』](t.me/CoPYLess786)**
 **Dᴏ** `.help` **Tᴏ Cʜᴇᴄᴋ Mʏ Cᴏᴍᴍᴀɴᴅs!!**
 """
-    await event.client.send_file(event.chat_id,amaan786,caption=tf, force_document=False, link_preview=False)
+    await event.client.send_file(event.chat_id,blazespammer,caption=tf, force_document=False, link_preview=False)
 import time
 from time import sleep
 
