@@ -1174,7 +1174,7 @@ async def restart(e):
 @blc.on(events.NewMessage(incoming=True, pattern=r"\,help"))
 @bld.on(events.NewMessage(incoming=True, pattern=r"\,help"))
 @ble.on(events.NewMessage(incoming=True, pattern=r"\,help"))
-@blf.on(events.NewMessage(incoming=True, pattern=r",help"))
+@blf.on(events.NewMessage(incoming=True, pattern=r"\,help"))
 @blg.on(events.NewMessage(incoming=True, pattern=r"\,help"))
 @blh.on(events.NewMessage(incoming=True, pattern=r"\,help"))
 @bli.on(events.NewMessage(incoming=True, pattern=r"\,help"))
@@ -1237,11 +1237,62 @@ async def alive(event):
 
 📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- **[➠【𓆩βƖꪖƹꫀ✧»ŋɛтᗯơᏒƙ★](https://t.me/BLAZE_SPAMMER)** 
 
-** ➠𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙰𝙻𝙻 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂《 ☞ ** `.help` 
+** ➠𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙰𝙻𝙻 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂《 ☞ ** `,help` 
 """
     await event.client.send_file(event.chat_id,blazespammer,caption=tf, force_document=False, link_preview=False)
 import time
 from time import sleep
+
+@bla.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blb.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blc.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@bld.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@ble.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blf.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blg.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blh.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@bli.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blj.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blk.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@bll.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blm.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@bln.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blo.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blp.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blq.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blr.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@bls.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blt.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+@blu.on(events.NewMessage(incoming=True, pattern=r"\,purge"))
+
+async def purge(event):
+ if event.sender_id in BLAZEA_USERS:
+   start = time.perf_counter()
+   reply_msg = await event.get_reply_message()
+   if not reply_msg:
+       await event.reply(
+            "`Reply to a message to select where to start purging from.`")
+       return
+   messages = []
+   message_id = reply_msg.id
+   delete_to = event.message.id
+   messages.append(event.reply_to_msg_id)
+   for msg_id in range(message_id, delete_to + 1):
+        messages.append(msg_id)
+        if len(messages) == 100:
+            await event.client.delete_messages(event.chat_id, messages)
+            messages = []
+   await event.client.delete_messages(event.chat_id, messages)
+   time_ = time.perf_counter() - start
+   text = f"🗑 `Purged Messages` `in {time_:0.2f} seconds`"
+   #hdgs = await event.respond(text, parse_mode='markdown')
+   await event.delete()
+   sleep(1)
+   #await hdgs.delete()
+   await event.delete()
+
+
+
 
 text = """🔰✘𓆩βƖꪖƹꫀ sρꪖꪑꪑε𝚁 ʀꪮʙʙꪮᴛ Ꭵs 𝙈𝙊𝘿𝙄𝙁𝙄𝙀𝘿...🔰"""
 print(text)
