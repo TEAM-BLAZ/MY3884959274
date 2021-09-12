@@ -1237,7 +1237,7 @@ async def alive(event):
 
 📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- **[➠【𓆩βƖꪖƹꫀ✧»ŋɛтᗯơᏒƙ★](https://t.me/BLAZE_SPAMMER)** 
 
-** ➠  𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙰𝙻𝙻 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂》** `.help` 
+** ➠  𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙰𝙻𝙻 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂》 ** `.help` 
 """
     await event.client.send_file(event.chat_id,blazespammer,caption=tf, force_document=False, link_preview=False)
 import time
