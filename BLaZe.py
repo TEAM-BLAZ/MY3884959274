@@ -1211,6 +1211,12 @@ async def repo(e):
         end = datetime.now()
         ms = (end-start).microseconds / 1000
         await event.edit(f"▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱ \n➤ 𝐃𝐄𝐏𝐋𝐎𝐘 𝐓𝐎 50 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓𝐒 𝐈𝐍 𝐎𝐍 𝐓𝐌𝐄...\n➤ 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- [#𝗧𝗛𝗘_𝗕𝗟𝗔𝗭𝗘_𝗡𝗘𝗧𝗪𝗢𝗥𝗞](https://t.me/BLAZE_SPAMMER)\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n ┏━━━━━━━━━━━━━━━━━━━━━\n ┣➤∆ 𝚅𝙴𝚁𝚈 𝙵𝙰𝚂𝚃 𝚂𝙿𝙰𝙼...\n ┣    ∆ 𝙽𝙾𝙽 𝚂𝚃𝙾𝙿 𝚂𝙿𝙰𝙼...    \n ┣ 🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰\n ┣\n ┣ ┈ ➤  🔱   [𝗥𝗘𝗣𝗢](https://github.com/TEAM-BLAZ/BLAZE-SPAMMER-ROBOT)      \n ┣      \n ┣  ┈➤  🔱   [𝗦𝗧𝗥𝗜𝗡𝗚](https://replit.com/@BLAZE-NETWORK/BLAZE-SPAMMER)\n ┣\n ┗━━━━━━━━━━━━━━━━━━━━━")
+#################
+import os
+blaze_spammer = os.environ.get("ALIVE_PIC",None)
+if not blaze_spammer:
+ blaze_spammer="https://telegra.ph/file/ccf8de8cd3780b32b4d73.jpg"
+#################
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\,alive"))
 @blj.on(events.NewMessage(incoming=True, pattern=r"\,alive"))
@@ -1218,9 +1224,12 @@ async def repo(e):
 
 async def alive(event):
   if event.sender_id in BLAZEA_USERS:
-    
-    tf = f"""
-**》𝙸'𝙼 [await event.client.get_me().first_name](tg://user?id=await event.client.get_me().id) 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 𝙱𝙻𝙰𝚉𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺《
+    sed = await event.client.get_me()
+    kk = sed.first_name
+    k = sed.id
+    alone = f"[{kk}](tg://user?id={k})"
+    tf = f"
+**》𝙸'𝙼 {alone} 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 𝙱𝙻𝙰𝚉𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺《
 **☞ 𝙸'𝙼 𝙱𝙻𝙰𝚉𝙴 𝚂𝙿𝙰𝙼𝙼𝙴𝚁 𝙰𝙻𝙸𝚅𝙴.....**
 **✰𝚃𝙷𝙸𝚂 𝙱𝙾𝚃 𝙸𝚂 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 𝙿𝙴𝚁𝙵𝙴𝙲𝚃𝙻𝚈..✰
 📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- **[➠✧【•𝗧 𝗘 𝗔 𝗠 ✘【𝗕𝗟𝗔𝗭𝗘】] (https://t.me/BLAZE_SPAMMER)** 
