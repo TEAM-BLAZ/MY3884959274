@@ -1211,12 +1211,12 @@ async def repo(e):
         end = datetime.now()
         ms = (end-start).microseconds / 1000
         await event.edit(f"▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱ \n➤ 𝐃𝐄𝐏𝐋𝐎𝐘 𝐓𝐎 50 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓𝐒 𝐈𝐍 𝐎𝐍 𝐓𝐌𝐄...\n➤ 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- [#𝗧𝗛𝗘_𝗕𝗟𝗔𝗭𝗘_𝗡𝗘𝗧𝗪𝗢𝗥𝗞](https://t.me/BLAZE_SPAMMER)\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n ┏━━━━━━━━━━━━━━━━━━━━━\n ┣➤∆ 𝚅𝙴𝚁𝚈 𝙵𝙰𝚂𝚃 𝚂𝙿𝙰𝙼...\n ┣    ∆ 𝙽𝙾𝙽 𝚂𝚃𝙾𝙿 𝚂𝙿𝙰𝙼...    \n ┣ 🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰\n ┣\n ┣ ┈ ➤  🔱   [𝗥𝗘𝗣𝗢](https://github.com/TEAM-BLAZ/BLAZE-SPAMMER-ROBOT)      \n ┣      \n ┣  ┈➤  🔱   [𝗦𝗧𝗥𝗜𝗡𝗚](https://replit.com/@BLAZE-NETWORK/BLAZE-SPAMMER)\n ┣\n ┗━━━━━━━━━━━━━━━━━━━━━")
-#################
+#####BLAZE OP BAKI LUND KI TOPI####
 import os
 blazespammer = os.environ.get("ALIVE_PIC",None)
 if not blazespammer:
  blazespammer="https://telegra.ph/file/2ab64117e0f74971ddb9e.jpg"
-#################
+##########COPY KRE USKI MA KA BOSDA#######
 
 @bla.on(events.NewMessage(incoming=True, pattern=r"\,alive"))
 @blj.on(events.NewMessage(incoming=True, pattern=r"\,alive"))
@@ -1229,11 +1229,11 @@ async def alive(event):
     k = sed.id
     s = f"[{kk}](tg://user?id={k})"
     tf = f"""
-**{s} Is Oɴ Fɪʀᴇ 🔥
-Hᴇʏᴀ D:) I Aᴍ Aʟɪᴠᴇ
-Aʟʟ Sʏsᴛᴇᴍs Aʀᴇ Wᴏʀᴋɪɴɢ Pʀᴏᴘᴇʟʏ!!
-Mᴀsᴛᴇʀ:-** **[『 ツᴅɪᴄͥᴛᴀᴛᴏͣʀͫ乛ᴀᴍᴀᴀɴ々』](t.me/CoPYLess786)**
-**Dᴏ** `.help` **Tᴏ Cʜᴇᴄᴋ Mʏ Cᴏᴍᴍᴀɴᴅs!!**
+**》𝙸'𝙼 {s} 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 𝙱𝙻𝙰𝚉𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺《**
+**☞ 𝙸'𝙼 𝙱𝙻𝙰𝚉𝙴 𝚂𝙿𝙰𝙼𝙼𝙴𝚁 𝙰𝙻𝙸𝚅𝙴.....**
+**✰𝚃𝙷𝙸𝚂 𝙱𝙾𝚃 𝙸𝚂 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 𝙿𝙴𝚁𝙵𝙴𝙲𝚃𝙻𝚈..✰
+📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- **[➠✧【•𝗧 𝗘 𝗔 𝗠 ✘【𝗕𝗟𝗔𝗭𝗘】] (https://t.me/BLAZE_SPAMMER)** 
+**➠  𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙰𝙻𝙻 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂》** `.help` 
 """
     await event.client.send_file(event.chat_id,blazespammer,caption=tf, force_document=False, link_preview=False)
 import time
